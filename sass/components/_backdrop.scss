@@ -1,0 +1,11 @@
+.backdrop {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
