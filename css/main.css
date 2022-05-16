@@ -537,6 +537,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -547,8 +549,17 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: #2196f3;
+  transition-property: #2196f3;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__link:hover, .clients__link:focus {
+  border-color: #2196f3;
+  fill: #2196f3;
 }
 
 .direction {
@@ -622,6 +633,19 @@ img {
   text-align: center;
 }
 
+@media screen and (min_width: 768px) and (max-width: 1199px) {
+  .footer__container {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 86px;
+    padding-right: 86px;
+  }
+}
+
 .logo {
   margin-bottom: 20px;
   display: block;
@@ -673,7 +697,8 @@ img {
 }
 
 .connect {
-  margin-bottom: 60px;
+  width: 206px;
+  margin: 0 auto 60px;
 }
 
 .connect__title {
@@ -1106,10 +1131,31 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
+  -webkit-transition-property: #2196f3;
+  transition-property: #2196f3;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icon-link:hover, .team-icon-link:focus {
+  background-color: #2196f3;
+}
+
+.team-icon-link:hover .team-icon,
+.team-icon-link:focus .team-icon {
+  fill: #ffffff;
 }
 
 .team-icon {
   fill: #afb1b8;
+  -webkit-transition-property: #2196f3;
+  transition-property: #2196f3;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 480px) {

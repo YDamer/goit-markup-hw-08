@@ -40,11 +40,22 @@ margin-top: 30px;
 
 .clients__link {
 display: flex;
+box-sizing: border-box;
     justify-content: center;
     align-items: center;
     height: 92px;
     border: 1px solid $grey-icon-color;
     border-radius: 4px;
+    
     fill: $grey-icon-color;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+transition-property: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+        fill: $accent-color;
+    }
 }

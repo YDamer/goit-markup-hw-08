@@ -75,8 +75,26 @@ font-style: normal;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-}
+
+    transition-property: $accent-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+        }
+    
+        &:hover .team-icon,
+        &:focus .team-icon {
+            fill: $primari-background-color;
+        }
+    }
 
 .team-icon {
     fill: $grey-icon-color;
+
+    transition-property: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
