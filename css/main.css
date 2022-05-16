@@ -1027,45 +1027,37 @@ img {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 
 .team-name {
   font-family: Roboto, sans-serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .item-list {
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.item {
+  padding: 30px 0;
 }
 
 .profession-item {
-  text-align: center;
   color: #757575;
-  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-}
-
-.team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.team-list .item {
-  margin-right: 30px;
-  height: 420px;
-}
-
-.team-list .item.item:last-child {
-  margin-right: 0;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .item .team-item {
@@ -1074,7 +1066,6 @@ img {
 }
 
 .team-item .item-list {
-  margin-bottom: 10px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1086,14 +1077,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.team-item {
-  height: 168px;
-  width: 270px;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 
 .team-social-link {
@@ -1127,31 +1110,10 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  -webkit-transition-property: #2196f3;
-  transition-property: #2196f3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-icon-link:hover, .team-icon-link:focus {
-  background-color: #2196f3;
-}
-
-.team-icon-link:hover .team-icon,
-.team-icon-link:focus .team-icon {
-  fill: #ffffff;
 }
 
 .team-icon {
   fill: #afb1b8;
-  -webkit-transition-property: #2196f3;
-  transition-property: #2196f3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 480px) {
