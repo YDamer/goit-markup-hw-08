@@ -1,6 +1,9 @@
  .team {
    background-color:$secondary-background-color;
+padding: 60px 0;
  }
+
+ 
 
 .team-name {
     font-family: $main-font-family;
@@ -8,17 +11,33 @@
     font-size: 28px;
     line-height: 1.17;
     text-align: center;
-    padding-top: 60px;
     padding-bottom: 30px;
 }
 
 .item-list {
     text-align: center;
-    margin-bottom: 10px;    
+    padding-bottom: 10px;  
+    padding-top: 30px;
+
+    @media screen and(min-width:768px){
+        display: flex;
+            flex-wrap: wrap;
+            margin-top: -30px;
+            margin-left: -30px;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+    }
+    
 }
 
 .item{
-    padding: 30px 0;
+    padding-bottom: 30px;
+    width: 354px;
+
+    &:last-child{
+        padding-bottom: 0;
+    }
 }
 
 .profession-item {
@@ -34,7 +53,7 @@ font-style: normal;
 
 .item .team-item {
     background-color: $primari-background-color;
-    padding: 30px 0;
+
 }
 
 .team-item .item-list {
@@ -48,7 +67,8 @@ font-style: normal;
 .team-social-link {
     justify-content: center;
     display: flex;
-}
+    padding-bottom: 24px;
+     }
 
 .team-item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
