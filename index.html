@@ -16,14 +16,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body class="page">
-
     <!--Site nav-->
 
-  <!-- <header class="header">
+    <!-- <header class="header">
       <div class="container header__container">
         <nav class="header__main-nav">
           <a href="./index.html" class="logo header__logo">
@@ -63,11 +62,10 @@
       </div>
     </header>
 -->
-   
-    <main>
 
+    <main>
       <!--Герой-->
-      <section class="hero">
+      <!--<section class="hero">
        <div class="container">
          <h1 class="hero__hero-title">
         Эффективные решения <br />
@@ -77,11 +75,11 @@
         Заказать услугу
       </button>
     </div>
-      </section>
+      </section>-->
 
-    <!-- Modal -->
+      <!-- Modal -->
 
-      <div class="backdrop is-hidden" data-modal>
+      <!--<div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal__modal-button" data-modal-close>
             <svg class="modal__modal-close-icon" width="11" height="11">
@@ -153,14 +151,14 @@
             <button type="submit" class="contact-form__contact-btn-wrapper">Отправить</button>
           </form>
         </div>
-      </div>
+      </div>-->
 
       <!--Наши преимущества-->
 
       <section class="advantage section">
         <div class="container">
           <h2 class="advantage visually-hidden">Преимущества работы с нами</h2>
-      
+
           <ul class="advantage__list">
             <li class="advantage__item">
               <div class="advantage__image">
@@ -217,11 +215,9 @@
       <!--Чем занимаемся-->
 
       <section class="direction">
-
         <div class="container direction__container">
           <h2 class="direction__title">Чем мы занимаемся</h2>
           <ul class="direction__list">
-
             <li class="direction__item">
               <div class="direction__box">
                 <img src="./images/box1.jpg" alt="набор текста" width="370" />
@@ -254,16 +250,24 @@
 
       <!--Наша команда-->
 
-     <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="team-name">Наша команда</h2>
 
           <ul class="team-list">
             <li class="item">
               <img
-                src="./images/name1.jpg"
+                srcset="
+                  ./images/name1-desk1x.jpg 270w,
+                  ./images/name1-tab1x.jpg  354w,
+                  ./images/name1-mobk1x.jpg 450w,
+                  ./images/name1-desk2x.jpg 540w,
+                  ./images/name1-tab2x.jpg  708w,
+                  ./images/name1-mob2x.jpg  900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                src="./images/name1-mob1x.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
               />
               <div class="team-item">
                 <h3 class="item-list">Игорь Демьяненко</h3>
@@ -303,7 +307,19 @@
               </div>
             </li>
             <li class="item">
-              <img src="./images/name2.jpg" alt="Ольга Репина" width="270" />
+              <img
+                srcset="
+                  ./images/name2-desk1x.jpg 270w,
+                  ./images/name2-tab1x.jpg  354w,
+                  ./images/name2-mobk1x.jpg 450w,
+                  ./images/name2-desk2x.jpg 540w,
+                  ./images/name2-tab2x.jpg  708w,
+                  ./images/name2-mob2x.jpg  900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                src="./images/name2-mob1x.jpg"
+                alt="Ольга Репина"
+              />
               <div class="team-item">
                 <h3 class="item-list">Ольга Репина</h3>
                 <p class="profession-item">Frontend Developer</p>
@@ -342,7 +358,19 @@
               </div>
             </li>
             <li class="item">
-              <img src="./images/name3.jpg" alt="Николай Тарасов" width="270" />
+              <img
+                srcset="
+                  ./images/name3-desk1x.jpg 270w,
+                  ./images/name3-tab1x.jpg  354w,
+                  ./images/name3-mobk1x.jpg 450w,
+                  ./images/name3-desk2x.jpg 540w,
+                  ./images/name3-tab2x.jpg  708w,
+                  ./images/name3-mob2x.jpg  900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px)450px"
+                src="./images/name3-mob1x.jpg"
+                alt="Николай Тарасов"
+              />
               <div class="team-item">
                 <h3 class="item-list">Николай Тарасов</h3>
                 <p class="profession-item">Marketing</p>
@@ -381,7 +409,19 @@
               </div>
             </li>
             <li class="item">
-              <img src="./images/name4.jpg" alt="Михаил Ермаков" width="270" />
+              <img
+                srcset="
+                  ./images/name4-desk1x.jpg 270w,
+                  ./images/name4-tab1x.jpg  354w,
+                  ./images/name4-mobk1x.jpg 450w,
+                  ./images/name4-desk2x.jpg 540w,
+                  ./images/name4-tab2x.jpg  708w,
+                  ./images/name4-mob2x.jpg  900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px "
+                src="./images/name4-mob1x.jpg"
+                alt="Михаил Ермаков"
+              />
               <div class="team-item">
                 <h3 class="item-list">Михаил Ермаков</h3>
                 <p class="profession-item">UI Designer</p>
@@ -425,7 +465,7 @@
 
       <!--Постоянные клиенты-->
 
-     <section class="clients">
+      <section class="clients">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="clients__list">
@@ -437,7 +477,7 @@
             </li>
             <li class="clients__item">
               <a class="clients__link" href="">
-                <svg  width="106" height="60">
+                <svg width="106" height="60">
                   <use href="./images/sprite.svg#icon-partner2"></use></svg
               ></a>
             </li>
@@ -472,8 +512,8 @@
 
     <!--Подвал страницы-->
 
-   <footer class="footer">
-      <div class=" container footer__container">
+    <footer class="footer">
+      <div class="container footer__container">
         <div>
           <a href="./index.html" class="logo">
             Web<span class="logo-white">Studio</span></a
@@ -529,18 +569,18 @@
           </ul>
         </div>
 
-      <div class="subscribe">
-        <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
-        <form>
-          <input class="subscribe__input" type="email" placeholder="E-mail" />
-          <button class="subscribe__button" type="submit">
-            Подписаться
-            <svg class="subscribe__icon-send">
-              <use href="./images/sprite.svg#icon-telegram"></use>
-            </svg>
-          </button>
-        </form>
-      </div>
+        <div class="subscribe">
+          <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
+          <form>
+            <input class="subscribe__input" type="email" placeholder="E-mail" />
+            <button class="subscribe__button" type="submit">
+              Подписаться
+              <svg class="subscribe__icon-send">
+                <use href="./images/sprite.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
