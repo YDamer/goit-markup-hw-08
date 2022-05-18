@@ -20,69 +20,80 @@
   </head>
 
   <body class="page">
-
     <!--Site nav-->
 
-     <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="header__main-nav">
           <a href="./index.html" class="logo header__logo">
             Web<span class="logo__logo-black">Studio</span>
-            </a>
-            <button type="button" class="burger-menu"
-             aria-expanded="false"
-             aria-controls="burger-container"
-             data-menu-button >
-              <svg width="40" height="40" 
-              aria-label="Переключатель мобильного меню">
-                <use class="icon-close" href="./images/sprite.svg#cross-close"></use>
-                <use class="icon-burger" href="./images/sprite.svg#burger-menu"></use>
-              </svg>
-            </button>
-            <div class="burger-container" id="burger-container" data-menu>
-              <ul class="site-nav">
-                <li class="site-nav__item">
-                  <a href="./index.html" class="site-nav__link current">Студия</a>
-                </li>
-                <li class="site-nav__item">
-                  <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-                </li>
-                <li class="site-nav__item">
-                  <a href="" class="site-nav__link">Контакты</a>
-                </li>
-              </ul>
-              
-              <ul class="contact-nav">
-                <li class="contact-nav__item">
-                  <a class="contact-nav__contact-mail" href="mailto:info@devstudio.com">
-                    info@devstudio.com</a>
-                </li>
-                <li class="contact-nav__item">
-                  <a class="contact-nav__contact-tel" href="tel:+380961111111">
-                    +38 096 111 11 11</a>
-                </li>
-              </ul>
+          </a>
+          <button
+            type="button"
+            class="burger-menu"
+            aria-expanded="false"
+            aria-controls="burger-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-close"
+                href="./images/sprite.svg#cross-close"
+              ></use>
+              <use
+                class="icon-burger"
+                href="./images/sprite.svg#burger-menu"
+              ></use>
+            </svg>
+          </button>
+          <div class="burger-container" id="burger-container" data-menu>
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link current">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link">Контакты</a>
+              </li>
+            </ul>
 
-              <ul class="burger-menu-socials">
-                <li class="burger-menu-item">
-                  <a href="" class="burger-menu-link">Instagram </a>
-                </li>
-                <li class="burger-menu-item">
-                  <a href="" class="burger-menu-link">Twitter</a>
-                </li>
-                <li class="burger-menu-item">
-                  <a href="" class="burger-menu-link">Facebook</a>
-                </li>
-                <li class="burger-menu-item">
-                  <a href="" class="burger-menu-link">LinkedIn</a>
-                </li>
-              </ul>
+            <ul class="contact-nav">
+              <li class="contact-nav__item">
+                <a
+                  class="contact-nav__contact-mail"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contact-nav__item">
+                <a class="contact-nav__contact-tel" href="tel:+380961111111">
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
 
-            </div>
-
-
-
-          
+            <ul class="burger-menu-socials">
+              <li class="burger-menu-item">
+                <a href="" class="burger-menu-link">Instagram </a>
+              </li>
+              <li class="burger-menu-item">
+                <a href="" class="burger-menu-link">Twitter</a>
+              </li>
+              <li class="burger-menu-item">
+                <a href="" class="burger-menu-link">Facebook</a>
+              </li>
+              <li class="burger-menu-item">
+                <a href="" class="burger-menu-link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -90,15 +101,15 @@
     <main>
       <!--Герой-->
       <section class="hero">
-       <div class="container">
-         <h1 class="hero__hero-title">
-        Эффективные решения <br />
-        для вашего бизнеса
-      </h1>
-      <button type="button" class="hero__button-primary" data-modal-open>
-        Заказать услугу
-      </button>
-    </div>
+        <div class="container">
+          <h1 class="hero__hero-title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <button type="button" class="hero__button-primary" data-modal-open>
+            Заказать услугу
+          </button>
+        </div>
       </section>
 
       <!-- Modal -->
@@ -169,10 +180,14 @@
               />
               <span class="contact-form__checkbox-icon"> </span>
               Соглашаюсь с рассылкой и принимаю
-              <a href="" class="contact-form__agreement-text">Условия договора</a>
+              <a href="" class="contact-form__agreement-text"
+                >Условия договора</a
+              >
             </label>
 
-            <button type="submit" class="contact-form__contact-btn-wrapper">Отправить</button>
+            <button type="submit" class="contact-form__contact-btn-wrapper">
+              Отправить
+            </button>
           </form>
         </div>
       </div>
@@ -244,9 +259,10 @@
           <ul class="direction__list">
             <li class="direction__item">
               <div class="direction__box">
-                <img srcset="./images/box1-desk1x.jpg, ./images/box1-desk2x.jpg"
-                src="./images/box1-desk1x.jpg"
-                alt="набор текста"
+                <img
+                  srcset="./images/box1-desk1x.jpg, ./images/box1-desk2x.jpg"
+                  src="./images/box1-desk1x.jpg"
+                  alt="набор текста"
                 />
                 <div class="direction__item-box">
                   <p>Десктопные приложения</p>
@@ -256,9 +272,11 @@
 
             <li class="direction__item">
               <div class="direction__box">
-                <img srcset="./images/box2-desk1x.jpg, ./images/box2-desk2x.jpg"
-                src="./images/box2-desk1x.jpg" 
-                alt="телефон в руке"/>
+                <img
+                  srcset="./images/box2-desk1x.jpg, ./images/box2-desk2x.jpg"
+                  src="./images/box2-desk1x.jpg"
+                  alt="телефон в руке"
+                />
                 <div class="direction__item-box">
                   <p>Мобильные приложения</p>
                 </div>
@@ -267,9 +285,11 @@
 
             <li class="direction__item">
               <div class="direction__box">
-                <img srcset="./images/box3-desk1x.jpg, ./images/box3-desk2x.jpg"
-                src="./images/box3-desk1x.jpg" 
-                alt="выбор палитры"/>
+                <img
+                  srcset="./images/box3-desk1x.jpg, ./images/box3-desk2x.jpg"
+                  src="./images/box3-desk1x.jpg"
+                  alt="выбор палитры"
+                />
                 <div class="direction__item-box">
                   <p>Дизайнерские решения</p>
                 </div>
@@ -291,7 +311,7 @@
                 srcset="
                   ./images/name1-desk1x.jpg 270w,
                   ./images/name1-tab1x.jpg  354w,
-                  ./images/name1-mob1x.jpg 450w,
+                  ./images/name1-mob1x.jpg  450w,
                   ./images/name1-desk2x.jpg 540w,
                   ./images/name1-tab2x.jpg  708w,
                   ./images/name1-mob2x.jpg  900w
@@ -342,7 +362,7 @@
                 srcset="
                   ./images/name2-desk1x.jpg 270w,
                   ./images/name2-tab1x.jpg  354w,
-                  ./images/name2-mob1x.jpg 450w,
+                  ./images/name2-mob1x.jpg  450w,
                   ./images/name2-desk2x.jpg 540w,
                   ./images/name2-tab2x.jpg  708w,
                   ./images/name2-mob2x.jpg  900w
@@ -393,7 +413,7 @@
                 srcset="
                   ./images/name3-desk1x.jpg 270w,
                   ./images/name3-tab1x.jpg  354w,
-                  ./images/name3-mob1x.jpg 450w,
+                  ./images/name3-mob1x.jpg  450w,
                   ./images/name3-desk2x.jpg 540w,
                   ./images/name3-tab2x.jpg  708w,
                   ./images/name3-mob2x.jpg  900w
@@ -444,7 +464,7 @@
                 srcset="
                   ./images/name4-desk1x.jpg 270w,
                   ./images/name4-tab1x.jpg  354w,
-                  ./images/name4-mob1x.jpg 450w,
+                  ./images/name4-mob1x.jpg  450w,
                   ./images/name4-desk2x.jpg 540w,
                   ./images/name4-tab2x.jpg  708w,
                   ./images/name4-mob2x.jpg  900w
@@ -545,55 +565,64 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <div>
-        
-          <div class="footer-wrapper">
-              
-                <div>
-                 
+        <div class="footer-wrapper">
+          <div>
+            <a href="./index.html" class="logo">
+              Web<span class="logo-white">Studio</span></a
+            >
             <address>
-              <a href="./index.html" class="logo">
-                Web<span class="logo-white">Studio</span></a>
               <ul class="footer__address-text">
                 <li class="footer__item">
-                  <a href="" class="footer__address-link">г. Киев, пр-т Леси Украинки, 26</a>
+                  <a href="" class="footer__address-link"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
                 </li>
                 <li class="footer__item">
-                  <a href="mailto:info@devstudio.com" class="footer__contact-link">info@devstudio.com</a>
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="footer__contact-link"
+                    >info@devstudio.com</a
+                  >
                 </li>
                 <li class="footer__item">
-                  <a href="tel:+380961111111" class="footer__contact-link">+38 096 111 11 11</a>
+                  <a href="tel:+380961111111" class="footer__contact-link"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
-            </div>
-            
-            <div class="connect">
-              <h2 class="connect__title">Присоединяйтесь</h2>
-              <ul class="connect__footer-icon">
-                <li class="connect__list">
-                  <a class="connect__link" href=""><svg class="connect__icon" width="20" height="20">
-                      <use href="./images/sprite.svg#icon-instagram"></use>
-                    </svg></a>
-                </li>
-                <li class="connect__list">
-                  <a class="connect__link" href=""><svg class="connect__icon" width="20" height="20">
-                      <use href="./images/sprite.svg#icon-twitter"></use>
-                    </svg></a>
-                </li>
-                <li class="connect__list">
-                  <a class="connect__link" href=""><svg class="connect__icon" width="20" height="20">
-                      <use href="./images/sprite.svg#icon-facebook"></use>
-                    </svg></a>
-                </li>
-                <li class="connect__list">
-                  <a class="connect__link" href=""><svg class="connect__icon" width="20" height="20">
-                      <use href="./images/sprite.svg#icon-linkedin"></use>
-                    </svg></a>
-                </li>
-              </ul>
-            </div>
           </div>
+
+          <div class="connect">
+            <h2 class="connect__title">Присоединяйтесь</h2>
+            <ul class="connect__footer-icon">
+              <li class="connect__list">
+                <a class="connect__link" href=""
+                  ><svg class="connect__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="connect__list">
+                <a class="connect__link" href=""
+                  ><svg class="connect__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="connect__list">
+                <a class="connect__link" href=""
+                  ><svg class="connect__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="connect__list">
+                <a class="connect__link" href=""
+                  ><svg class="connect__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <div class="subscribe">
           <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
@@ -607,7 +636,6 @@
             </button>
           </form>
         </div>
-      </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
