@@ -40,8 +40,6 @@
               </svg>
             </button>
             <div class="burger-container" id="burger-container" data-menu>
-          
-
               <ul class="site-nav">
                 <li class="site-nav__item">
                   <a href="./index.html" class="site-nav__link current">Студия</a>
@@ -56,17 +54,27 @@
               
               <ul class="contact-nav">
                 <li class="contact-nav__item">
-                  <a class="contact-nav__contact" href="mailto:info@devstudio.com">
-                    <svg class="contact-nav__contact-icon" width="20" height="20">
-                      <use href="./images/sprite.svg#icon-envelope"></use>
-                    </svg>info@devstudio.com</a>
+                  <a class="contact-nav__contact-mail" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a>
                 </li>
                 <li class="contact-nav__item">
-                  <a class="contact-nav__contact" href="tel:+380961111111">
-                    <svg class="contact-nav__contact-icon" width="20" height="20">
-                      <use href="./images/sprite.svg#icon-smartphone"></use>
-                    </svg>
+                  <a class="contact-nav__contact-tel" href="tel:+380961111111">
                     +38 096 111 11 11</a>
+                </li>
+              </ul>
+
+              <ul class="burger-menu-socials">
+                <li class="burger-menu-item">
+                  <a href="" class="burger-menu-link">Instagram </a>
+                </li>
+                <li class="burger-menu-item">
+                  <a href="" class="burger-menu-link">Twitter</a>
+                </li>
+                <li class="burger-menu-item">
+                  <a href="" class="burger-menu-link">Facebook</a>
+                </li>
+                <li class="burger-menu-item">
+                  <a href="" class="burger-menu-link">LinkedIn</a>
                 </li>
               </ul>
 
@@ -283,7 +291,7 @@
                 srcset="
                   ./images/name1-desk1x.jpg 270w,
                   ./images/name1-tab1x.jpg  354w,
-                  ./images/name1-mobk1x.jpg 450w,
+                  ./images/name1-mob1x.jpg 450w,
                   ./images/name1-desk2x.jpg 540w,
                   ./images/name1-tab2x.jpg  708w,
                   ./images/name1-mob2x.jpg  900w
@@ -334,7 +342,7 @@
                 srcset="
                   ./images/name2-desk1x.jpg 270w,
                   ./images/name2-tab1x.jpg  354w,
-                  ./images/name2-mobk1x.jpg 450w,
+                  ./images/name2-mob1x.jpg 450w,
                   ./images/name2-desk2x.jpg 540w,
                   ./images/name2-tab2x.jpg  708w,
                   ./images/name2-mob2x.jpg  900w
@@ -385,7 +393,7 @@
                 srcset="
                   ./images/name3-desk1x.jpg 270w,
                   ./images/name3-tab1x.jpg  354w,
-                  ./images/name3-mobk1x.jpg 450w,
+                  ./images/name3-mob1x.jpg 450w,
                   ./images/name3-desk2x.jpg 540w,
                   ./images/name3-tab2x.jpg  708w,
                   ./images/name3-mob2x.jpg  900w
@@ -436,7 +444,7 @@
                 srcset="
                   ./images/name4-desk1x.jpg 270w,
                   ./images/name4-tab1x.jpg  354w,
-                  ./images/name4-mobk1x.jpg 450w,
+                  ./images/name4-mob1x.jpg 450w,
                   ./images/name4-desk2x.jpg 540w,
                   ./images/name4-tab2x.jpg  708w,
                   ./images/name4-mob2x.jpg  900w
@@ -538,11 +546,14 @@
     <footer class="footer">
       <div class="container footer__container">
         <div>
-          <a href="./index.html" class="logo">
-            Web<span class="logo-white">Studio</span></a
-          >
+        
           <div class="footer-wrapper">
+              
+                <div>
+                 
             <address>
+              <a href="./index.html" class="logo">
+                Web<span class="logo-white">Studio</span></a>
               <ul class="footer__address-text">
                 <li class="footer__item">
                   <a href="" class="footer__address-link">г. Киев, пр-т Леси Украинки, 26</a>
@@ -596,6 +607,7 @@
             </button>
           </form>
         </div>
+      </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
