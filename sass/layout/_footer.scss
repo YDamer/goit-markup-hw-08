@@ -5,10 +5,11 @@ footer {
   .container {
     display: flex;
     justify-content: center;
+    text-align: center;
 
     div {
       @media screen and(max-width:1200px) {
-        text-align: center;
+        // text-align: center;
       }
 
       @media (min-width: 768px) and(max-width:1200px) {
@@ -28,13 +29,12 @@ footer {
       align-items: center;
     }
   }
-}
+  .logo {
+    margin-bottom: 20px;
+    display: block;
 
-.logo {
-  margin-bottom: 20px;
-  display: block;
-
-  @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
+    }
   }
 }
 
@@ -81,7 +81,7 @@ footer {
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
-    text-align: center;
+    // text-align: center;
   }
 }
 
@@ -89,7 +89,7 @@ footer {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
   }
 
   @media screen and (max-width: 767px) {
@@ -111,7 +111,7 @@ footer {
   margin-bottom: 20px;
 
   @media screen and(max-width:1199px) {
-    text-align: center;
+    // text-align: center;
   }
 }
 
