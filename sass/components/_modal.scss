@@ -4,8 +4,9 @@
 }
 
 .modal {
-  width: 450px;
-  height: 609px;
+  max-width: 450px;
+  width: 100%;
+  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -14,6 +15,11 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__modal-button {
@@ -35,24 +41,23 @@
 
   &:hover,
   &:focus {
-    fill:$accent-color;
+    fill: $accent-color;
   }
 }
 
 .contact-form {
   display: block;
-  width: 448px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .contact-form__contact-form-title {
-  font-family:$main-font-family;
+  font-family: $main-font-family;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 32px;
   margin-bottom: 12px;
 }
 
@@ -71,7 +76,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus {
-    border-color:$accent-color;
+    border-color: $accent-color;
   }
 }
 
@@ -82,25 +87,23 @@
   top: 30px;
   left: 10px;
 
- 
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: fill;
-  }
-
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+}
 
 .contact-form__contact-form-label {
   position: relative;
-  color:$secondary-text-color;
+  color: $secondary-text-color;
   font-size: 12px;
 
   &:focus-within {
-    color:$accent-color;
+    color: $accent-color;
   }
 }
 
 .contact-form__contact-form-input:focus + .contact-form__contact-form-icon {
-  fill:$accent-color;
+  fill: $accent-color;
 }
 
 .contact-form__contact-form-comments {
@@ -118,7 +121,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   .contact-form__contact-form-comments:focus {
-    border-color:$accent-color;
+    border-color: $accent-color;
   }
 }
 
@@ -131,13 +134,18 @@
 .contact-form__contact-form-checkbox {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 
   font-family: $main-font-family;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   width: 100%;
-  color:$secondary-text-color;
+  color: $secondary-text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .contact-form__agreement-text {
@@ -155,33 +163,34 @@
 }
 
 .contact-form__contact-checkbox:checked + .contact-form__checkbox-icon {
-  border-color:$accent-color;
+  border-color: $accent-color;
   background-color: $accent-color;
   background-image: url('../images/modal-send-icon.svg');
   background-size: contain;
   background-repeat: no-repeat;
 
   &:hover .contact-form__checkbox-icon,
-  &:focus.contact-form__checkbox-icon{
+  &:focus.contact-form__checkbox-icon {
     fill: $accent-color;
   }
 }
 
 .contact-form__contact-btn-wrapper {
+  display: block;
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  padding: 10px 56px;
-  margin: 30px 124px 0;
+  margin: 0 auto;
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   border: none;
-  background-color:$accent-color;
-  color:$primari-background-color;
+  background-color: $accent-color;
+  color: $primari-background-color;
 
-  transition-property:$accent-color;
+  transition-property: $accent-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
