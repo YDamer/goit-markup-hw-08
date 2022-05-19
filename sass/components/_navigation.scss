@@ -45,6 +45,10 @@
       transform: translateX(0);
     }
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .site-nav {
@@ -69,13 +73,14 @@
   }
 
   .site-nav__link {
-    // в медіа для моб екранів
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
-    color: $primary-text-color;
+    @media screen and (max-width: 480px) {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.18;
+      letter-spacing: 0.02em;
+      color: $primary-text-color;
+    }
 
     &:hover,
     &:focus {
@@ -85,6 +90,17 @@
     &.current {
       color: $accent-color;
     }
+  }
+
+  @media (min-width: 768px) and (max-width: 1200px) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #212121;
   }
 }
 
@@ -97,25 +113,49 @@
 }
 
 .contact-nav__contact-tel {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
-  color: $accent-color;
+  @media (min-width: 768px) and (min-width: 1200px) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
 
-  &:first-child {
-    margin-bottom: 32px;
-    display: flex;
+    color: #757575;
+  }
+  @media screen and (max-width: 480px) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+
+    &:first-child {
+      margin-bottom: 32px;
+      display: flex;
+    }
   }
 }
 .contact-nav__contact-mail {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: $secondary-text-color;
+  @media (min-width: 768px) and (min-width: 1200px) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+  }
+  @media screen and (max-width: 480px) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color;
+  }
 }
 .burger-menu-socials {
   display: flex;
