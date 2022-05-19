@@ -1,61 +1,65 @@
 .clients {
-padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__title {
-    margin-bottom: 30px;
-        font-family:$main-font-family;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 33px;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color:$primary-text-color;}
+  margin-bottom: 30px;
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
 
 .clients__list {
-    display: flex;
-    flex-wrap: wrap;
-            margin-top: -30px;
-            margin-left: -30px;
-        }
-
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
 
 .clients__item {
-margin-top: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 60px) / 2);
+
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
     margin-left: 30px;
-    flex-basis: calc((100% - 60px) / 2);
-
-    @media screen and (min-width: 768px){
-            margin-top: 30px;
-            margin-left: 30px;
-            flex-basis: calc((100% - 90px) / 3);
-        }
-                @media screen and (min-width: 1200px) {
-                    flex-basis: calc((100% - 180px) / 6);
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 180px) / 6);
+  }
 }
-}
-
 
 .clients__link {
-display: flex;
-box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    height: 92px;
-    border: 1px solid $grey-icon-color;
-    border-radius: 4px;
-    
-    fill: $grey-icon-color;
-    
-transition-property: $accent-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  border: 1px solid $grey-icon-color;
+  border-radius: 4px;
 
-    &:hover,
-    &:focus {
-        border-color: $accent-color;
-        fill: $accent-color;
-    }
+  fill: $grey-icon-color;
+
+  transition-property: $accent-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    fill: $accent-color;
+  }
 }
