@@ -6,12 +6,11 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
+    @media screen and(min-width:1200px) {
+      text-align: start;
+    }
 
     div {
-      @media screen and(max-width:1200px) {
-        // text-align: center;
-      }
-
       @media (min-width: 768px) and(max-width:1200px) {
         flex-basis: 50%;
       }
@@ -47,6 +46,7 @@ footer {
   color: $primari-background-color;
   font-size: 14px;
   text-decoration: none;
+  font-style: normal;
 
   transition-property: $accent-color;
   transition-duration: 250ms;

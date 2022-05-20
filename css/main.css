@@ -514,6 +514,12 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   fill: currentColor;
 }
 
@@ -546,6 +552,12 @@ img {
   fill: currentColor;
   letter-spacing: 0.02em;
   line-height: 1.17;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -625,6 +637,21 @@ img {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 1200px) {
+  .advantage__list li {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .advantage__list li {
+    margin-bottom: 30px;
+  }
+  .advantage__list li:nth-child(n + 3) {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .advantage__list {
     display: -webkit-box;
@@ -637,13 +664,12 @@ img {
   }
 }
 
-.advantage__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 480px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .advantage__item {
     width: 100%;
+  }
+  .advantage__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -652,9 +678,7 @@ img {
     width: 354px;
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
-    margin-bottom: unset;
     margin-left: 30px;
-    margin-top: 30px;
   }
 }
 
@@ -663,6 +687,7 @@ img {
     width: 270px;
     -ms-flex-preferred-size: calc((100% - 120px) / 4);
         flex-basis: calc((100% - 120px) / 4);
+    margin-bottom: 0;
   }
 }
 
@@ -703,6 +728,13 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
@@ -837,6 +869,12 @@ footer .container {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  footer .container {
+    text-align: start;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1200px) {
   footer .container div {
     -ms-flex-preferred-size: 50%;
@@ -885,6 +923,7 @@ footer .logo {
   color: #ffffff;
   font-size: 14px;
   text-decoration: none;
+  font-style: normal;
   -webkit-transition-property: #2196f3;
   transition-property: #2196f3;
   -webkit-transition-duration: 250ms;
@@ -1046,7 +1085,6 @@ footer .logo {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  margin-bottom: 60px;
   background-position: center;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/overlay-tab1x.jpg);
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay-tab1x.jpg);
@@ -1096,6 +1134,7 @@ footer .logo {
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 136px;
+  border: none;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -1138,11 +1177,11 @@ footer .logo {
   }
 }
 
-.work__item {
+.work__nav {
   margin-right: 8px;
 }
 
-.work__item:hover, .work__item:focus {
+.work__nav:hover, .work__nav:focus {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -1439,14 +1478,39 @@ footer .logo {
 }
 
 @media screen and (min-width: 768px) {
+  .team-name {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-name {
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .team-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: -30px;
     margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list li {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .team-list li:nth-child(n + 3) {
+    margin-bottom: 0;
   }
 }
 
@@ -1459,7 +1523,6 @@ footer .logo {
   .item {
     width: 354px;
     margin-left: 30px;
-    margin-top: 30px;
   }
 }
 

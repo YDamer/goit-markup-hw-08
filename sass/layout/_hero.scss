@@ -4,7 +4,6 @@
   max-width: 1600px;
   justify-content: center;
   margin: 0 auto;
-  margin-bottom: 60px;
   background-position: center;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/overlay-tab1x.jpg);
@@ -46,6 +45,7 @@
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 136px;
+  border: none;
 
   font-family: $main-font-family;
   font-weight: 700;

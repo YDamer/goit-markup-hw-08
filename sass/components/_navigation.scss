@@ -176,6 +176,8 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: $secondary-text-color;
+  display: flex;
+  align-items: center;
   fill: currentColor;
 
   @media (min-width: 768px) and (max-width: 1199px) {
@@ -205,6 +207,8 @@
   fill: currentColor;
   letter-spacing: 0.02em;
   line-height: 1.17;
+  display: flex;
+  align-items: center;
 
   @media (min-width: 768px) and (max-width: 1199px) {
     font-size: 12px;
